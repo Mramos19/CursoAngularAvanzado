@@ -9,8 +9,10 @@ const routes: Routes = [
     {
         path: 'NotFound', component:NotFoundComponent
     },
-    {        
-        
+    {
+        path: '', redirectTo: 'Home', pathMatch: 'full'
+    },
+    {                
         path: '**', redirectTo: 'NotFound', pathMatch: 'full'
     }
 ];
